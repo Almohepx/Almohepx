@@ -9035,7 +9035,7 @@ return LuaTele.sendText(msg_chat_id,msg_id,'\n*⌔︙مطور البوت : {*['.
 end
 end
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
-photo = "https://t.me/tomaas20/6069"
+photo = "https://t.me/tomaas20/17"
 local T =[[
 • اهلا بك في سورس المهيب
 ]]
@@ -9046,7 +9046,7 @@ keyboard.inline_keyboard = {
 {text = '𝗗𝗲𝗩', url = "https://t.me/Masal_m10"}
 },
 {
-{text = ' 𝘀𝗼𝘂𝗿𝗿𝗰', url = "https://t.me/tomaas20"}
+{text = ' 𝘀𝗼𝘂𝗿𝗰', url = "https://t.me/tomaas20"}
 },
 }
 local msgg = msg_id/2097152/0.5
