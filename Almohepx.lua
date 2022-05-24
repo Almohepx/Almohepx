@@ -114,7 +114,7 @@ return Chat_Type
 end
 function The_ControllerAll(UserId)
 ControllerAll = false
-local ListSudos ={Sudo_Id,296369326}  
+local ListSudos ={Sudo_Id,5234417234}  
 for k, v in pairs(ListSudos) do
 if tonumber(UserId) == tonumber(v) then
 ControllerAll = true
@@ -125,9 +125,9 @@ end
 function Controllerbanall(ChatId,UserId)
 Status = 0
 DevelopersQ = Redis:sismember(Almohepx.."Almohepx:DevelopersQ:Groups",UserId) 
-if UserId == 296369326 then
+if UserId == 5234417234 then
 Status = true
-elseif UserId == 296369326 then
+elseif UserId == 5234417234 then
 Status = true
 elseif UserId == Sudo_Id then  
 Status = true
@@ -150,9 +150,9 @@ Managers = Redis:sismember(Almohepx.."Almohepx:Managers:Group"..ChatId,UserId)
 Addictive = Redis:sismember(Almohepx.."Almohepx:Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(Almohepx.."Almohepx:Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if UserId == 296369326 then
+if UserId == 5234417234 then
 Status = 'مبرمج السورس'
-elseif UserId == 296369326 then
+elseif UserId == 5234417234 then
 Status = 'مبرمج السورس'
 elseif UserId == Sudo_Id then  
 Status = 'المطور الاساسي'
@@ -726,9 +726,9 @@ Managers = Redis:sismember(Almohepx.."Almohepx:Managers:Group"..ChatId,UserId)
 Addictive = Redis:sismember(Almohepx.."Almohepx:Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(Almohepx.."Almohepx:Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if UserId == 296369326 then
+if UserId == 5234417234 then
 Status = true
-elseif UserId == 296369326 then
+elseif UserId == 5234417234 then
 Status = true
 elseif UserId == Sudo_Id then  
 Status = true
@@ -765,9 +765,9 @@ Managers = Redis:sismember(Almohepx.."Almohepx:Managers:Group"..ChatId,UserId)
 Addictive = Redis:sismember(Almohepx.."Almohepx:Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(Almohepx.."Almohepx:Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if UserId == 296369326 then
+if UserId == 5234417234 then
 Status = true
-elseif UserId == 296369326 then
+elseif UserId == 5234417234 then
 Status = true
 elseif UserId == Sudo_Id then    
 Status = true
@@ -893,10 +893,10 @@ return LuaTele.deleteMessages(msg.chat_id,{[1]= msg.id}),LuaTele.setChatMemberSt
 elseif Statusrestricted(msg.chat_id,msg.sender.user_id).SilentGroup == true then
 return LuaTele.deleteMessages(msg.chat_id,{[1]= msg.id})
 end
-if tonumber(msg.sender.user_id) == 296369326 then
+if tonumber(msg.sender.user_id) == 5234417234 then
 msg.Name_Controller = 'مبرمج السورس '
 msg.The_Controller = 1
-elseif tonumber(msg.sender.user_id) == 296369326 then
+elseif tonumber(msg.sender.user_id) == 5234417234 then
 msg.Name_Controller = 'مبرمج السورس '
 msg.The_Controller = 1
 elseif The_ControllerAll(msg.sender.user_id) == true then  
@@ -2483,7 +2483,7 @@ if ChannelJoin(msg) == false then
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/'..Redis:get(Almohepx..'Almohepx:Channel:Join')}, },}}
 return LuaTele.sendText(msg.chat_id,msg.id,'*\n⌔︙عليك الاشتراك في قناة البوت لاستخذام الاوامر*',"md",false, false, false, false, reply_markup)
 end
-LuaTele.sendText(msg_chat_id,msg_id,'*⌔︙عدد احصائيات البوت الكامله \nٴ•━━━━━━𝘽,𝙍,𝘼━━━━━━━•ٴ\n⌔︙عدد المجموعات : '..(Redis:scard(Almohepx..'Almohepx:ChekBotAdd') or 0)..'\n⌔︙عدد المشتركين : '..(Redis:scard(Almohepx..'Almohepx:Num:User:Pv') or 0)..'*',"md",true)  
+LuaTele.sendText(msg_chat_id,msg_id,'*⌔︙عدد احصائيات البوت الكامله \nٴ•━━━━━━𝘽,𝙍,??━━━━━━━•ٴ\n⌔︙عدد المجموعات : '..(Redis:scard(Almohepx..'Almohepx:ChekBotAdd') or 0)..'\n⌔︙عدد المشتركين : '..(Redis:scard(Almohepx..'Almohepx:Num:User:Pv') or 0)..'*',"md",true)  
 end
 if text == 'تفعيل' and msg.Developers then
 if msg.can_be_deleted_for_all_users == false then
@@ -9035,7 +9035,7 @@ return LuaTele.sendText(msg_chat_id,msg_id,'\n*⌔︙مطور البوت : {*['.
 end
 end
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
-photo = "https://t.me/tomaas20/17"
+photo = "https://t.me/tomaas20/6069"
 local T =[[
 • اهلا بك في سورس المهيب
 ]]
@@ -9046,7 +9046,7 @@ keyboard.inline_keyboard = {
 {text = '𝗗𝗲𝗩', url = "https://t.me/Masal_m10"}
 },
 {
-{text = ' 𝘀𝗼𝘂𝗿𝗰', url = "https://t.me/tomaas20"}
+{text = ' 𝘀𝗼𝘂𝗿𝗿𝗰', url = "https://t.me/tomaas20"}
 },
 }
 local msgg = msg_id/2097152/0.5
